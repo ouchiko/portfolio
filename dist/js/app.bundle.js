@@ -91,9 +91,20 @@
   !*** ./src/app.js ***!
   \********************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\nconsole.log('Welcome from app.js - this is a change 3');\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("// Styles\n__webpack_require__(/*! ./scss/index.scss */ \"./src/scss/index.scss\");\n\n// Script\nconsole.log('Welcome from app.js');\n\n//# sourceURL=webpack:///./src/app.js?");
+
+/***/ }),
+
+/***/ "./src/scss/index.scss":
+/*!*****************************!*\
+  !*** ./src/scss/index.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// extracted by mini-css-extract-plugin\n    if(false) { var cssReload; }\n  \n\n//# sourceURL=webpack:///./src/scss/index.scss?");
 
 /***/ })
 

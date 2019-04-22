@@ -1,2 +1,5 @@
+// Styles
+require('./scss/index.scss');
 
-console.log('Welcome from app.js - this is a change 3');
+// Script
+console.log('Welcome from app.js');
