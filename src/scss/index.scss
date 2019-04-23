@@ -1,0 +1,20 @@
+// libraries
+@import '../../node_modules/reset-css/sass/reset';
+@import '../../node_modules/bootstrap-4-grid/scss/grid.scss';
+@import url('https://fonts.googleapis.com/css?family=Kadwa:700');
+
+// variables 
+@import 'variables';
+
+// global styles 
+body {
+    background-color: $gray-lightest;
+    font-family: $font-base;
+    color: $gray-darkest;
+    font-size: 1.2rem;
+}
+
+// components 
+@import 'header';
+@import 'content';
+@import 'footer';
