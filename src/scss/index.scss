@@ -11,10 +11,14 @@ body {
     background-color: $gray-lightest;
     font-family: $font-base;
     color: $gray-darkest;
-    font-size: 1.2rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.2rem;
+    }
 }
 
 // components 
+@import 'typography';
 @import 'header';
 @import 'content';
 @import 'footer';

@@ -12,11 +12,18 @@ class App extends Component {
 
                 <section class="content">
                     <div class="container">
-                        <div class="row">
+
+                        <div id="about" class="row">
                             <div class="col">
-                            <p>This is the content area</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
+                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
+                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
+                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Claudii libidini, qui 
+                                    tum erat summo ne imperio, dederetur. Sed ad illum redeo. Duo Reges: constructio 
+                                    interrete. Idem adhuc;</p>
                             </div>
                         </div>
+
                     </div>
                 </section>
 

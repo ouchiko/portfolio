@@ -1,5 +1,21 @@
 import React, { Component } from "react";
 
+import { Button } from './Typography.js';
+
+class Navigation extends Component {
+    render() {
+        return (
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><Button href="#about" text="About"/></li>
+                    <li><Button href="#work" text="Work"/></li>
+                    <li><Button href="#contact" text="Contact"/></li>
+                </ul>
+            </nav>
+        );
+    }
+}
+
 class Header extends Component {
     render() {
         return (
@@ -7,9 +23,13 @@ class Header extends Component {
                 <div class="container">
                     <div class="row align-items-end">
                         <div class="col">
+
                             <a href="/" class="title">
                                 <h1>benclark.dev</h1>
                             </a>
+                            <p class="intro">Hello! My name's Ben and I'm a web developer based in London.</p>
+                            <Navigation />
+
                         </div>
                     </div>
                 </div>
