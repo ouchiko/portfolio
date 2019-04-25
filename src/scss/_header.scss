@@ -1,19 +1,26 @@
 #header { 
     .title {
-        display: inline-block;
-        padding: 1rem 2rem;
-        background: $yellow;
-        color: $black;
-        font-family: $font-heading;
+        padding-top: 2rem;
+        margin: 0; 
+        background-color: $yellow;
+        line-height: 2rem;
         font-size: 2rem;
-        text-decoration: none;
-        transition: all ease .5s;
 
         @include media-breakpoint-up(sm) {
+            padding-top: 4rem;
+            line-height: 4rem;
             font-size: 4rem;
         }
 
         @include media-breakpoint-up(md) {
+            padding-top: 5rem;
+            line-height: 5rem;
+            font-size: 5rem;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 6rem;
+            line-height: 6rem;
             font-size: 6rem;
         }
 
@@ -22,12 +29,22 @@
         }
     } 
 
+    .navigation {
+        margin-top: 2rem;
+    }
+
     .menu li {
-        display: inline-block;
+        @include media-breakpoint-up(sm) {
+            display: inline-block;
+        }
+
+        .button {
+            max-width: 100%;
+        }
     }
 
     .intro {
-        margin-top: 2rem; 
+        margin-top: 4rem; 
         font-size: 1.4rem; 
         font-weight: 500;
     }

@@ -1,9 +1,42 @@
+h2, h3 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: $blue;
+}
+
+img {
+    max-width: 100%;
+}
+
 .button {
     display: inline-block;
     padding: 1rem 2rem;
+    border: 0;
     margin: 0 1rem 1rem 0;
-    background: $blue;
+    background-color: $gray-lighter;
     text-decoration: none;
     font-family: $font-heading;
+    font-size: 1.2rem;
     color: $black;
+    line-height: 1.2rem;
+    transition: all ease .5s;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+.form {
+    input, 
+    textarea {
+        display: block;
+    }
 }

@@ -23,13 +23,11 @@ class Header extends Component {
                 <div class="container">
                     <div class="row align-items-end">
                         <div class="col">
-
-                            <a href="/" class="title">
+                            <a href="/" class="button title">
                                 <h1>benclark.dev</h1>
                             </a>
                             <p class="intro">Hello! My name's Ben and I'm a web developer based in London.</p>
                             <Navigation />
-
                         </div>
                     </div>
                 </div>
