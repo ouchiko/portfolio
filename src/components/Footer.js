@@ -4,12 +4,12 @@ class Footer extends Component {
     render() {
         return (
             <footer id="footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col copyright">
+                <div className="container">
+                    <div className="row">
+                        <div className="col copyright">
                             &copy; Ben Clark 
                         </div>
-                        <div class="col social">
+                        <div className="col social">
                             Social links 
                         </div>
                     </div>

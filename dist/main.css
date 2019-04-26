@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Kadwa:700);
 /* http://meyerweb.com/eric/tools/css/reset/
    v4.0 | 20180602
    License: none (public domain)
@@ -2190,14 +2191,104 @@ html {
   visibility: hidden !important; }
 
 body {
-  background-color: #e5e7e1; }
+  background-color: #fafaf8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #4a4948;
+  scroll-behavior: smooth; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.2rem; } }
 
-#header {
-  padding: 1rem;
-  background: #ffc907;
-  color: white;
-  font-size: 6rem; }
+h2, h3 {
+  margin-bottom: .5rem;
+  font-weight: 500; }
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem; }
+
+a {
+  color: #3da5d9; }
+
+img {
+  max-width: 100%; }
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 0;
+  margin: 0 1rem 1rem 0;
+  background-color: #e7e6e4;
+  text-decoration: none;
+  font-family: "Kadwa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #222120;
+  line-height: 1.2rem;
+  transition: all ease .5s; }
+  .button:hover {
+    background-color: #3da5d9; }
+
+.form input,
+.form textarea {
+  display: block; }
+
+#header .title {
+  padding-top: 2rem;
+  margin: 0;
+  background-color: #ffc907;
+  line-height: 2rem;
+  font-size: 2rem; }
+  @media (min-width: 576px) {
+    #header .title {
+      padding-top: 4rem;
+      line-height: 4rem;
+      font-size: 4rem; } }
+  @media (min-width: 768px) {
+    #header .title {
+      padding-top: 5rem;
+      line-height: 5rem;
+      font-size: 5rem; } }
+  @media (min-width: 992px) {
+    #header .title {
+      padding-top: 6rem;
+      line-height: 6rem;
+      font-size: 6rem; } }
+  #header .title:hover {
+    background-color: #3da5d9; }
+
+#header .navigation {
+  margin-top: 2rem; }
+
+@media (min-width: 576px) {
+  #header .menu li {
+    display: inline-block; } }
+
+#header .menu li .button {
+  max-width: 100%; }
+
+#header .intro {
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  font-weight: 500; }
+
+.content {
+  padding: 3rem 0;
+  line-height: 1.6rem; }
+  @media (min-width: 768px) {
+    .content {
+      line-height: 2rem; } }
+  .content article {
+    margin-bottom: 3rem; }
+  .content .avatar {
+    border-radius: 100%;
+    background-color: yellow;
+    transition: all .5s ease; }
+    .content .avatar__image {
+      border-radius: 100%;
+      background-blend-mode: multiply; }
 
 #footer {
-  background: green; }
+  padding: 1rem; }
+  #footer .social {
+    text-align: right; }
 
