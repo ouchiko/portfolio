@@ -11,12 +11,28 @@
     }
 
     .avatar {
-        height: 100%; 
+        margin: 0 auto;
+        width: 160px;
+        height: 160px; 
         border-radius: 100%;
-        background-color: $yellow;
+        background-color: $primary;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: luminosity;
+    }
+
+    .website {
+        .tags {
+
+        }
+
+        .tag {
+            display: inline-block;
+            margin-right: .5rem;
+            font-size: .8rem;
+            line-height: 1.5rem;
+            font-weight: 600;
+        }
     }
 }

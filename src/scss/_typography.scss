@@ -9,7 +9,7 @@ h2 {
 }
 
 a {
-    color: $blue;
+    color: $tertiary;
 }
 
 img {
@@ -49,13 +49,13 @@ img {
 
     &::before {
         left: 0;
-        border-bottom: 1000px solid red;
+        border-bottom: 1000px solid $tertiary;
         transition: all ease-in-out 0.8s;
     }
 
     &::after {
         left: -10%;
-        border-bottom: 1000px solid $blue;
+        border-bottom: 1000px solid $secondary;
         transition: all ease-in-out 1.2s;
     }
 

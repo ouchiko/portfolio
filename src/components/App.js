@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import styles from '../scss/_variables.scss'
 
-console.log(styles);
-
 // components
 import Header from './Header.js';
 import { Avatar } from './Typography.js';
+import Website from './Website.js';
 import Footer from './Footer.js';
 
 class App extends Component {
@@ -71,41 +70,29 @@ class App extends Component {
                                 <h2>Recent work</h2>
                             </div>
 
-                            <article className="col-12 col-md-6">
-                                <img src="http://lorempixel.com/1000/600/abstract/" alt="Image"/>
-                                <h3>Seeing Machines</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
-                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
-                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
-                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
-                            </article>
+                            <Website classes="col-12 col-md-6" 
+                                title="Seeing Machines" 
+                                caption="Caption here"
+                                src="assets/seeingmachines.jpg"
+                                tags={['HTML', 'Sass', 'JS', 'AJAX', 'PHP', 'Responsive', 'WordPress']} />
 
-                            <article className="col-12 col-md-6">
-                                <img src="http://lorempixel.com/1000/600/abstract/" alt="Image"/>
-                                <h3>AFLOAT</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
-                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
-                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
-                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
-                            </article>
+                            <Website classes="col-12 col-md-6" 
+                                title="AFLOAT" 
+                                caption="Caption here"
+                                src="assets/afloat.jpg"
+                                tags={['HTML', 'Sass', 'JS', 'PHP', 'Responsive', 'WordPress']} />
 
-                            <article className="col-12 col-md-6">
-                                <img src="http://lorempixel.com/1000/600/abstract/" alt="Image"/>
-                                <h3>Newington College</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
-                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
-                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
-                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
-                            </article>
+                            <Website classes="col-12 col-md-6" 
+                                title="Newington College" 
+                                caption="Caption here"
+                                src="assets/newington.jpg"
+                                tags={['HTML', 'CSS', 'JS', 'PHP', 'Responsive', 'WordPress']} />
 
-                            <article className="col-12 col-md-6">
-                                <img src="http://lorempixel.com/1000/600/abstract/" alt="Image"/>
-                                <h3>Hunter Valley Grammar School</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
-                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
-                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
-                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
-                            </article>
+                            <Website classes="col-12 col-md-6" 
+                                title="Hunter Valley Grammar School" 
+                                caption="Caption here"
+                                src="assets/hvgs.jpg"
+                                tags={['HTML', 'Sass', 'JS', 'PHP', 'Responsive', 'WordPress']} />
 
                             <article className="col-12 col-md-6">
                                 <h3>More</h3>
