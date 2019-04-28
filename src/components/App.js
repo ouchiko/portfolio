@@ -102,14 +102,19 @@ class App extends Component {
                         </section>
 
                         <section id="contact" className="row">
-                            <article className="col">
+                            <article className="col-12 col-md-8 col-lg-6">
                                 <h2>Send me a message</h2>
 
                                 <form className="form" action="" method="post">
-                                    <input type="text" name="name" placeholder="Name" />
-                                    <input type="email" name="email" placeholder="Email" />
-                                    <textarea name="message" cols="30" rows="10" placeholder="Message" ></textarea>
-                                    <button type="submit" className="button">Send</button>
+                                    <label for="name">Name <span class="required">*</span></label>
+                                    <input type="text" name="name" required />
+                                    <label for="email">Email <span class="required">*</span></label>
+                                    <input type="email" name="email" required />
+                                    <label for="message">Message</label>
+                                    <textarea name="message" rows="10"></textarea>
+                                    <button type="submit" className="button">
+                                        <span>Send</span>
+                                    </button>
                                 </form>
 
                                 <p>Or email me at <a href="mailto:ben@benclark.dev">ben@benclark.dev</a></p>

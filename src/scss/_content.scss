@@ -20,11 +20,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-blend-mode: luminosity;
+        box-shadow: 0 0 5px rgba( $black, 0.2 );
     }
 
     .website {
-        .tags {
-
+        img {
+            box-shadow: 0 0 5px rgba( $black, 0.2 );
         }
 
         .tag {
