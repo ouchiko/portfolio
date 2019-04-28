@@ -6,25 +6,35 @@ export class ContactForm extends Component {
     submit(e) {
         e.preventDefault();
         let form = document.getElementById('contact-form');
-
-        // get values 
-        let formValues = {
-            name : document.getElementById('form-name').value,
-            email : document.getElementById('form-email').value,
-            message : document.getElementById('form-message').value,
+        let fields = {
+            name : document.getElementById('form-name'),
+            email : document.getElementById('form-email'),
+            message : document.getElementById('form-message'),
+            submit : document.getElementById('form-submit'),
         };
+        let thanks = document.getElementById('thanks');
 
-        // send POST to formcarry
+        // disable all fields and change thanks text
+        fields.submit.disabled = true;
+        thanks.textContent = 'Sending...';
+
+        // send 
         fetch(form.action, {
             method: 'post',
             headers: {
                 'Accept': 'application/json, text/plain, */*',
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(formValues)
+            body: JSON.stringify({
+                name : fields.name.value,
+                email : fields.email.value,
+                message : fields.message.value,
+            })
         })
-        .then(res => res.json())
-        .then(res => console.log(res));
+        .then(res => {
+            // change button and thanks text
+            thanks.textContent = 'Sent. Thank you!';
+        });
     }
 
     render() {
@@ -36,9 +46,12 @@ export class ContactForm extends Component {
                 <input id="form-email" type="email" name="email" required />
                 <label htmlFor="message">Message</label>
                 <textarea id="form-message" name="message" rows="10"></textarea>
-                <button type="submit" className="button">
-                    <span>Send</span>
-                </button>
+                <div class="footer">
+                    <button id="form-submit" type="submit" className="button">
+                        <span id="form-submit-text">Send</span>
+                    </button>
+                    <span id="thanks"></span>
+                </div>
             </form>
         );
     }

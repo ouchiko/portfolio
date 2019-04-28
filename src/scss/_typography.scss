@@ -10,6 +10,11 @@ h2 {
 
 a {
     color: $tertiary;
+    transition: all ease .2s;
+
+    &:hover {
+        color: darken( $tertiary, 20 );
+    }
 }
 
 img {
@@ -61,10 +66,27 @@ img {
 
     &:hover {
         box-shadow: 0 3px 5px rgba( $black, 0.2 );
+        color: $black;
 
         &::before,
         &::after {
             transform: translate(0%,-100%);	
+        }
+    }
+
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed !important;
+        pointer-events: all !important;
+        opacity: 0.8;
+
+        &::before,
+        &::after {
+            display: none;
+        }
+
+        &:hover {
+            box-shadow: none;
         }
     }
 }
@@ -97,5 +119,9 @@ img {
 
     button {
         cursor: pointer;
+    }
+
+    .footer {
+        color: $secondary;
     }
 }
