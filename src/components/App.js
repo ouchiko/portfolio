@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import styles from '../scss/_variables.scss'
 
 // components
 import Header from './Header.js';
 import { Avatar } from './Typography.js';
+import { ContactForm } from './ContactForm.js';
 import Website from './Website.js';
 import Footer from './Footer.js';
 
@@ -104,19 +104,7 @@ class App extends Component {
                         <section id="contact" className="row">
                             <article className="col-12 col-md-8 col-lg-6">
                                 <h2>Send me a message</h2>
-
-                                <form className="form" action="" method="post">
-                                    <label for="name">Name <span class="required">*</span></label>
-                                    <input type="text" name="name" required />
-                                    <label for="email">Email <span class="required">*</span></label>
-                                    <input type="email" name="email" required />
-                                    <label for="message">Message</label>
-                                    <textarea name="message" rows="10"></textarea>
-                                    <button type="submit" className="button">
-                                        <span>Send</span>
-                                    </button>
-                                </form>
-
+                                <ContactForm />
                                 <p>Or email me at <a href="mailto:ben@benclark.dev">ben@benclark.dev</a></p>
                             </article>
                         </section>
