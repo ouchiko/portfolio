@@ -71,34 +71,66 @@ class App extends Component {
                             </div>
 
                             <Website classes="col-12 col-md-6" 
-                                title="Seeing Machines" 
-                                caption="is a"
-                                src="assets/seeingmachines.jpg"
-                                url="https://www.seeingmachines.com" />
+                                title="The Buzz - online newsletter platform" 
+                                caption="A fully customisable theme and suite of plugins to turn WordPress into an 
+                                    online newsletter creation and distribution platform. Plugins to optionally add 
+                                    category sorting, calendars and email marketing integration (using the MailChimp 
+                                    and Campaign Monitor APIs) were also created. User training was provided 
+                                    and extensive documentation was written to further help customers."
+                                src="assets/thebuzz.jpg"
+                                buttons={[
+                                    { url : "https://www.thebuzz.net.au/", label : "Website" },
+                                    { url : "https://demo.thebuzz.net.au/", label : "Demos" },
+                                    { url : "https://www.thebuzz.net.au/docs", label : "Docs" },
+                                ]} />
 
                             <Website classes="col-12 col-md-6" 
-                                title="AFLOAT" 
-                                caption="Caption here"
+                                title="Afloat" 
+                                caption="WordPress theme built from scratch using the CSS framework Tailwind. The   
+                                    homepage features an animated magazine layout alongside product carousels and forms 
+                                    that filter user-created classifieds listings. PHP and CSS was used to prefix specific 
+                                    headings with a maritime signal flag icon corresponding to the first letter in the string."
                                 src="assets/afloat.jpg"
-                                url="https://www.afloat.com.au" />
+                                buttons={[
+                                    { url : "https://www.afloat.com.au" }
+                                ]} />
 
-                            <Website classes="col-12 col-md-6" 
-                                title="Newington College" 
-                                caption="Caption here"
-                                src="assets/newington.jpg"
-                                url="https://www.newington.nsw.edu.au" />
+                            <Website classes="col-12 col-md-4" 
+                                title="Seeing Machines" 
+                                caption="Bespoke WordPress theme with pre-styled content blocks allowing the client 
+                                    to create varied content with the same template. The hero image at the top 
+                                    of each content page includes a logo overlay with surrounding blur effect, 
+                                    accomplished with CSS and SVG filters. On the homepage live statistics are 
+                                    obtained using AJAX and then animated with the TweenMax library."
+                                src="assets/seeingmachines.jpg"
+                                buttons={[
+                                    { url : "https://www.seeingmachines.com" }
+                                ]} />
 
-                            <Website classes="col-12 col-md-6" 
+                            <Website classes="col-12 col-md-4" 
                                 title="Hunter Valley Grammar School" 
-                                caption="Caption here"
+                                caption="This custom-built WordPress theme was coded with a focus on automatically 
+                                    linking related content through categories and tags. A suite of components 
+                                    were also created to allow the client to embed interactive video sets, 
+                                    carousels and related content links on any page. Small hover animations 
+                                    were added with CSS to some elements at the clients' request."
                                 src="assets/hvgs.jpg"
-                                url="https://www.hvgs.nsw.edu.au" />
+                                buttons={[
+                                    { url : "https://www.hvgs.nsw.edu.au" }
+                                ]} />
 
-                            <article className="col-12 col-md-6">
-                                <h3>More</h3>
-                                <p>The Buzz online newsletter system</p>
-                                <p>Buzz docs</p>
-                            </article>
+                            <Website classes="col-12 col-md-4" 
+                                title="Newington College" 
+                                caption="A custom WordPress theme centred around a suite of customisable content blocks 
+                                    featuring images, carousels and various styles of text. Each block automatically 
+                                    generates a unique anchor link for the client to externally link to. The layout 
+                                    needed to be flexible enough to be used across the clients' large network of 
+                                    microsites and landing pages."
+                                src="assets/newington.jpg"
+                                buttons={[
+                                    { url : "https://www.newington.nsw.edu.au" }
+                                ]} />
+
                         </section>
 
                         <section id="contact" className="row">

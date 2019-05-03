@@ -30,25 +30,28 @@ img {
     display: inline-block;
     padding: 1rem 2rem;
     border: 0;
-    margin: 0 1rem 1rem 0;
-    width: 99%;
+    width: 100%;
+    margin: 0 0 1rem 0;
     background-color: $gray-lighter;
     text-decoration: none;
     font-family: $font-heading;
     font-size: 1.2rem;
     color: $black;
+    text-align: center;
     line-height: 1.2rem;
     overflow: hidden;
     transition: all ease .5s;
 
     @include media-breakpoint-up(sm) {
         width: auto;
+        margin-right: 1rem;
     }
 
     h1, 
     span {
         z-index: 2;	
         position: relative;
+        width: 100%;
     }
 
     &::before,
