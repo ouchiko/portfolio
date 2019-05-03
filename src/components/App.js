@@ -18,12 +18,13 @@ class App extends Component {
 
                         <section id="about" className="row">
                             <article className="col-12 col-sm-8 col-lg-9 col-xl-10">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Videamus animi partes, 
-                                    quarum est conspectus illustrior; Qui non moveatur et offensione turpitudinis et 
-                                    comprobatione honestatis? Sit sane ista voluptas. Nec lapathi suavitatem acupenseri 
-                                    Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat; Claudii libidini, qui 
-                                    tum erat summo ne imperio, dederetur. Sed ad illum redeo. Duo Reges: constructio 
-                                    interrete. Idem adhuc;</p>
+                                <p>My previous roles at boutique agencies and contract work in Sydney, Australia 
+                                    has given me lots of experience across the stack, but my main focus has always 
+                                    been the front-end. I enjoy puzzling out a design into working styles and fine 
+                                    tuning the user interactivity on top.</p>
+                                <p>Outside of coding I'm a massive tennis fan, a wannabe baker and have hiked up 
+                                    the tallest mountain in Australia twice! (which if you know it isn't that big 
+                                    of a deal...)</p>
                             </article>
                             <article className="col-12 col-sm-4 col-lg-3 col-xl-2">
                                 <Avatar yellow src="assets/avatar.png" />
