@@ -70,7 +70,7 @@ class App extends Component {
                                 <h2>Recent work</h2>
                             </div>
 
-                            <Website classes="col-12 col-md-6" 
+                            <Website classes="col-12 col-lg-6" 
                                 title="The Buzz - online newsletter platform" 
                                 caption="A fully customisable theme and suite of plugins to turn WordPress into an 
                                     online newsletter creation and distribution platform. Plugins to optionally add 
@@ -95,7 +95,7 @@ class App extends Component {
                                     { url : "https://www.afloat.com.au" }
                                 ]} />
 
-                            <Website classes="col-12 col-md-4" 
+                            <Website classes="col-12 col-md-6 col-lg-4" 
                                 title="Seeing Machines" 
                                 caption="Bespoke WordPress theme with pre-styled content blocks allowing the client 
                                     to create varied content with the same template. The hero image at the top 
@@ -107,7 +107,7 @@ class App extends Component {
                                     { url : "https://www.seeingmachines.com" }
                                 ]} />
 
-                            <Website classes="col-12 col-md-4" 
+                            <Website classes="col-12 col-md-6 col-lg-4" 
                                 title="Hunter Valley Grammar School" 
                                 caption="This custom-built WordPress theme was coded with a focus on automatically 
                                     linking related content through categories and tags. A suite of components 
@@ -119,7 +119,7 @@ class App extends Component {
                                     { url : "https://www.hvgs.nsw.edu.au" }
                                 ]} />
 
-                            <Website classes="col-12 col-md-4" 
+                            <Website classes="col-12 col-md-6 col-lg-4" 
                                 title="Newington College" 
                                 caption="A custom WordPress theme centred around a suite of customisable content blocks 
                                     featuring images, carousels and various styles of text. Each block automatically 
