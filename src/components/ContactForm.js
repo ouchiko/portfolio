@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-
-
 export class ContactForm extends Component {
     submit(e) {
         e.preventDefault();
@@ -46,7 +44,7 @@ export class ContactForm extends Component {
                 <input id="form-email" type="email" name="email" required />
                 <label htmlFor="message">Message</label>
                 <textarea id="form-message" name="message" rows="10"></textarea>
-                <div class="footer">
+                <div className="footer">
                     <button id="form-submit" type="submit" className="button">
                         <span id="form-submit-text">Send</span>
                     </button>

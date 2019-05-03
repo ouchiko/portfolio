@@ -61,7 +61,7 @@ class App extends Component {
                                     <li>WordPress (themes &amp; plugins)</li>
                                     <li>Subversion (SVN) / Git</li>
                                     <li>Sketch / Photoshop</li>
-                                    <li>Documentation &amp; User Guides</li>
+                                    <li>Documentation &amp; User Training</li>
                                     <li>JIRA / Help Desk</li>
                                 </ul>
                             </article>
@@ -72,27 +72,27 @@ class App extends Component {
 
                             <Website classes="col-12 col-md-6" 
                                 title="Seeing Machines" 
-                                caption="Caption here"
+                                caption="is a"
                                 src="assets/seeingmachines.jpg"
-                                tags={['HTML', 'Sass', 'JS', 'AJAX', 'PHP', 'Responsive', 'WordPress']} />
+                                url="https://www.seeingmachines.com" />
 
                             <Website classes="col-12 col-md-6" 
                                 title="AFLOAT" 
                                 caption="Caption here"
                                 src="assets/afloat.jpg"
-                                tags={['HTML', 'Sass', 'JS', 'PHP', 'Responsive', 'WordPress']} />
+                                url="https://www.afloat.com.au" />
 
                             <Website classes="col-12 col-md-6" 
                                 title="Newington College" 
                                 caption="Caption here"
                                 src="assets/newington.jpg"
-                                tags={['HTML', 'CSS', 'JS', 'PHP', 'Responsive', 'WordPress']} />
+                                url="https://www.newington.nsw.edu.au" />
 
                             <Website classes="col-12 col-md-6" 
                                 title="Hunter Valley Grammar School" 
                                 caption="Caption here"
                                 src="assets/hvgs.jpg"
-                                tags={['HTML', 'Sass', 'JS', 'PHP', 'Responsive', 'WordPress']} />
+                                url="https://www.hvgs.nsw.edu.au" />
 
                             <article className="col-12 col-md-6">
                                 <h3>More</h3>

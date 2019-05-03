@@ -8,6 +8,10 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+h3 {
+    font-size: 1.4rem;
+}
+
 a {
     color: $tertiary;
     transition: all ease .2s;
@@ -25,9 +29,9 @@ img {
     position: relative;
     display: inline-block;
     padding: 1rem 2rem;
-    height: 100%;
     border: 0;
     margin: 0 1rem 1rem 0;
+    width: 99%;
     background-color: $gray-lighter;
     text-decoration: none;
     font-family: $font-heading;
@@ -36,6 +40,10 @@ img {
     line-height: 1.2rem;
     overflow: hidden;
     transition: all ease .5s;
+
+    @include media-breakpoint-up(sm) {
+        width: auto;
+    }
 
     h1, 
     span {
