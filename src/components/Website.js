@@ -25,9 +25,7 @@ class Website extends Component {
         
         return (
             <article className={`website ${this.props.classes}`}>
-                <a className="link" href={this.props.url} target="_blank" title={`Visit ${this.props.title}`}>
-                    <img src={this.props.src} alt={this.props.title}/>
-                </a>
+                <img src={this.props.src} alt={this.props.title}/>
                 <h3 className="title">{this.props.title}</h3>
                 <p className="caption">{this.props.caption}</p>
                 { tags ? <ul className="tags">{tags}</ul> : `` }

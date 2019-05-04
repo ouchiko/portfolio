@@ -2207,34 +2207,102 @@ h2 {
   font-size: 1.8rem;
   margin-bottom: 1.5rem; }
 
+h3 {
+  font-size: 1.4rem; }
+
 a {
-  color: #3da5d9; }
+  color: #e71d36;
+  transition: all ease .2s; }
+  a:hover {
+    color: #8f0f1f; }
 
 img {
   max-width: 100%; }
 
 .button {
+  position: relative;
   display: inline-block;
   padding: 1rem 2rem;
   border: 0;
-  margin: 0 1rem 1rem 0;
+  width: 100%;
+  margin: 0 0 1rem 0;
   background-color: #e7e6e4;
   text-decoration: none;
   font-family: "Kadwa", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.2rem;
   color: #222120;
+  text-align: center;
   line-height: 1.2rem;
+  overflow: hidden;
   transition: all ease .5s; }
+  @media (min-width: 576px) {
+    .button {
+      width: auto;
+      margin-right: 1rem; } }
+  .button h1,
+  .button span {
+    z-index: 2;
+    position: relative;
+    width: 100%; }
+  .button::before, .button::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    border-right: 1000px solid transparent;
+    z-index: 1; }
+  .button::before {
+    left: 0;
+    border-bottom: 1000px solid #e71d36;
+    transition: all ease-in-out 0.8s; }
+  .button::after {
+    left: -10%;
+    border-bottom: 1000px solid #2ec4b6;
+    transition: all ease-in-out 1.2s; }
   .button:hover {
-    background-color: #3da5d9; }
+    box-shadow: 0 3px 5px rgba(34, 33, 32, 0.2);
+    color: #222120; }
+    .button:hover::before, .button:hover::after {
+      transform: translate(0%, -100%); }
+  .button:disabled, .button[disabled] {
+    cursor: not-allowed !important;
+    pointer-events: all !important;
+    opacity: 0.8; }
+    .button:disabled::before, .button:disabled::after, .button[disabled]::before, .button[disabled]::after {
+      display: none; }
+    .button:disabled:hover, .button[disabled]:hover {
+      box-shadow: none; }
 
-.form input,
-.form textarea {
-  display: block; }
+#contact-form input,
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border: 1px solid #d3d2d0;
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  transition: all ease-in-out .5s; }
+  #contact-form input:focus, #contact-form input:active,
+  #contact-form textarea:focus,
+  #contact-form textarea:active {
+    border-color: #2ec4b6; }
+
+#contact-form label {
+  font-weight: 500; }
+
+#contact-form .required {
+  color: #e71d36; }
+
+#contact-form button {
+  cursor: pointer; }
+
+#contact-form .footer {
+  color: #2ec4b6; }
 
 #header .title {
   padding-top: 2rem;
   margin: 0;
+  width: auto;
   background-color: #ffc907;
   line-height: 2rem;
   font-size: 2rem; }
@@ -2253,8 +2321,10 @@ img {
       padding-top: 6rem;
       line-height: 6rem;
       font-size: 6rem; } }
-  #header .title:hover {
-    background-color: #3da5d9; }
+  #header .title::before {
+    transition-duration: 0.5s; }
+  #header .title::after {
+    transition-duration: 0.8s; }
 
 #header .navigation {
   margin-top: 2rem; }
@@ -2279,16 +2349,49 @@ img {
       line-height: 2rem; } }
   .content article {
     margin-bottom: 3rem; }
+  .content p {
+    margin-bottom: 1rem; }
   .content .avatar {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
     border-radius: 100%;
-    background-color: yellow;
-    transition: all .5s ease; }
-    .content .avatar__image {
-      border-radius: 100%;
-      background-blend-mode: multiply; }
+    background-color: #ffc907;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    box-shadow: 0 0 5px rgba(34, 33, 32, 0.2); }
+  .content .website img {
+    display: block;
+    box-shadow: 0 0 5px rgba(34, 33, 32, 0.2);
+    margin-bottom: 1rem; }
+  .content .website .caption {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .content .website .tag {
+    display: inline-block;
+    margin-right: .5rem;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    font-weight: 600; }
 
 #footer {
   padding: 1rem; }
+  @media (max-width: 767.98px) {
+    #footer {
+      text-align: center; } }
   #footer .social {
-    text-align: right; }
+    margin-top: 1rem; }
+    @media (min-width: 576px) {
+      #footer .social {
+        margin: 0;
+        text-align: right; } }
+    #footer .social li {
+      display: inline;
+      margin-left: 1rem; }
+      #footer .social li:first-of-type {
+        margin: 0; }
+    #footer .social img {
+      width: 2rem; }
 

@@ -18,8 +18,8 @@ class App extends Component {
 
                         <section id="about" className="row">
                             <article className="col-12 col-sm-8 col-lg-9 col-xl-10">
-                                <p>My previous roles at boutique agencies and contract work in Sydney, Australia 
-                                    has given me lots of experience across the stack, but my main focus has always 
+                                <p>Originally from Sydney, Australia, my previous roles at boutique agencies and contract work 
+                                    have given me lots of experience across the stack, but my main focus has always 
                                     been the front-end. I enjoy puzzling out a design into working styles and fine 
                                     tuning the user interactivity on top.</p>
                                 <p>Outside of coding I'm a massive tennis fan, a wannabe baker and have hiked up 
@@ -91,10 +91,7 @@ class App extends Component {
                                     homepage features an animated magazine layout alongside product carousels and forms 
                                     that filter user-created classifieds listings. PHP and CSS was used to prefix specific 
                                     headings with a maritime signal flag icon corresponding to the first letter in the string."
-                                src="assets/afloat.jpg"
-                                buttons={[
-                                    { url : "https://www.afloat.com.au" }
-                                ]} />
+                                src="assets/afloat.jpg" />
 
                             <Website classes="col-12 col-md-6 col-lg-4" 
                                 title="Seeing Machines" 
