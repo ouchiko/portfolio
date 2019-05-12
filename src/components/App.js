@@ -23,8 +23,7 @@ class App extends Component {
                                     been the front-end. I enjoy puzzling out a design into working styles and fine 
                                     tuning the user interactivity on top.</p>
                                 <p>Outside of coding I'm a massive tennis fan, a wannabe baker and have hiked up 
-                                    the tallest mountain in Australia twice! (which if you know it isn't that big 
-                                    of a deal...)</p>
+                                    the tallest mountain in Australia twice! (which if you know it isn't much to brag about...)</p>
                             </article>
                             <article className="col-12 col-sm-4 col-lg-3 col-xl-2">
                                 <Avatar yellow src="assets/avatar.png" />
@@ -90,8 +89,12 @@ class App extends Component {
                                 caption="WordPress theme built from scratch using the CSS framework Tailwind. The   
                                     homepage features an animated magazine layout alongside product carousels and forms 
                                     that filter user-created classifieds listings. PHP and CSS was used to prefix specific 
-                                    headings with a maritime signal flag icon corresponding to the first letter in the string."
-                                src="assets/afloat.jpg" />
+                                    headings with a maritime signal flag icon corresponding to the first letter in the string.
+                                    Delivered to client but not yet live."
+                                src="assets/afloat.jpg" 
+                                buttons={[
+                                    { url : "https://benclark.dev/demo/afloat", label: "Preview" }
+                                ]} />
 
                             <Website classes="col-12 col-md-6 col-lg-4" 
                                 title="Seeing Machines" 
