@@ -1,6 +1,32 @@
 import React, { Component } from "react";
+import { getCurves } from "crypto";
+
+function ThankYouSegment(props) {
+    return (
+        <div id="thanks">{props.thankYouText}</div>
+    );
+}
+
+function SubmitButton(props) {
+    return (
+        <button id="form-submit" type="submit" className="button" disabled={props.submitDisabled}>
+            <span id="form-submit-text">Send</span>
+        </button>
+    );
+}
 
 export class ContactForm extends Component {
+
+    constructor(props) {
+		super(props);
+		this.state = {
+            thankYouText: "Waiting..",
+            submitDisabled: false
+        }
+
+        this.submit = this.submit.bind(this);
+    };
+
     submit(e) {
         e.preventDefault();
         let form = document.getElementById('contact-form');
@@ -10,11 +36,11 @@ export class ContactForm extends Component {
             message : document.getElementById('form-message'),
             submit : document.getElementById('form-submit'),
         };
-        let thanks = document.getElementById('thanks');
 
-        // disable all fields and change thanks text
-        fields.submit.disabled = true;
-        thanks.textContent = 'Sending...';
+        this.setState({
+            thankYouText: "Now Sending..",
+            submitDisabled: true
+        });
 
         // send 
         fetch(form.action, {
@@ -31,7 +57,9 @@ export class ContactForm extends Component {
         })
         .then(res => {
             // change button and thanks text
-            thanks.textContent = 'Sent. Thank you!';
+            this.setState({
+                thankYouText: "It's been sent!"
+            });
         });
     }
 
@@ -45,10 +73,8 @@ export class ContactForm extends Component {
                 <label htmlFor="message">Message</label>
                 <textarea id="form-message" name="message" rows="10"></textarea>
                 <div className="footer">
-                    <button id="form-submit" type="submit" className="button">
-                        <span id="form-submit-text">Send</span>
-                    </button>
-                    <span id="thanks"></span>
+                    <SubmitButton disabled={this.state.submitDisabled}/>
+                    <ThankYouSegment thankYouText={this.state.thankYouText}/> 
                 </div>
             </form>
         );
